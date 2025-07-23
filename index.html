@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Developer Jobs in Chicago</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f7f7f7;
+        padding: 20px;
+      }
+
+      h1 {
+        text-align: center;
+        color: #333;
+      }
+
+      .job-list {
+        display: grid;
+        gap: 20px;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .job-card {
+        background-color: #fff;
+        padding: 15px 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .job-title {
+        font-size: 18px;
+        font-weight: bold;
+        color: #0073e6;
+      }
+
+      .company {
+        font-size: 16px;
+        color: #555;
+      }
+
+      .location,
+      .salary {
+        font-size: 14px;
+        color: #777;
+      }
+
+      .apply-link {
+        margin-top: 10px;
+        display: inline-block;
+        padding: 6px 12px;
+        background-color: #0073e6;
+        color: white;
+        border-radius: 4px;
+        text-decoration: none;
+      }
+
+      .apply-link:hover {
+        background-color: #005bb5;
+      }
+
+      button {
+        margin-top: 20px;
+        background: #1e90ff;
+        color: #fff;
+        border: none;
+        padding: 12px 25px;
+        font-size: 1rem;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+      }
+
+      button:hover {
+        background-color: #005bb5;
+      }
+
+      p {
+        display: flex;
+        justify-content: center;
+      }
+
+      @media (max-width: 500px) {
+        h1 {
+          font-size: 1.5rem;
+        }
+        #fetchBtn {
+          width: 100%;
+        }
+        .match-card {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Developer Jobs</h1>
+    <div class="job-list" id="jobList"></div>
+    <p><button onclick="fetchJobs()">search for job</button></p>
+
+    <script src="main.js"></script>
+  </body>
+</html>
